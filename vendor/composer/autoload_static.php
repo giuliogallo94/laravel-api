@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b
+class ComposerStaticInitacd32616e207496d032cf477e569d889
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -549,6 +549,7 @@ class ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b
         'App\\Http\\Controllers\\Admin\\TechnologyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TechnologyController.php',
         'App\\Http\\Controllers\\Admin\\TrashController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TrashController.php',
         'App\\Http\\Controllers\\Admin\\TypeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TypeController.php',
+        'App\\Http\\Controllers\\Api\\ProjectController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ProjectController.php',
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
         'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -4608,6 +4609,7 @@ class ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
         'Ramsey\\Uuid\\Validator\\GenericValidator' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/GenericValidator.php',
         'Ramsey\\Uuid\\Validator\\ValidatorInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/Validator/ValidatorInterface.php',
+        'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -6026,9 +6028,9 @@ class ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit5e1cbca5ce204b3b5f902c942ccbb14b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitacd32616e207496d032cf477e569d889::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitacd32616e207496d032cf477e569d889::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitacd32616e207496d032cf477e569d889::$classMap;
 
         }, null, ClassLoader::class);
     }
