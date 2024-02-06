@@ -8,7 +8,7 @@ use App\Http\Requests\StoreLeadRequest;
 use App\Models\Lead;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\NewLead;
+use App\Mail\NewLeadEmail;
 
 class LeadController extends Controller
 {
@@ -34,7 +34,7 @@ class LeadController extends Controller
         $lead->fill($form_data);
         $lead->save();
 
-        Mail::to('admin@boolpress.com')->send(new NewLead($lead));
+        Mail::to('admin@boolpress.com')->send(new NewLeadEmail($lead));
 
         return response()->json([
         'success' => true,
